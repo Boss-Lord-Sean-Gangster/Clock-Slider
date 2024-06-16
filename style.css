@@ -1,0 +1,47 @@
+body{
+    background-color: #dfe6f6;
+}
+.clock{
+    margin-top: 20em;
+    margin-left: 24em;
+    width: 100vmin;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vmax;
+    height: 4vmin;
+    position: relative;
+    padding: 0 4vmin;
+}
+.hours, .minutes, .seconds{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4vmin;
+    grid-row: 1/2;
+    align-items: start;
+    width: 2vmax;
+}
+.number{
+    user-select: none;
+    width: 8vmin;
+    height: 8vmin;
+    display: grid;
+    place-items: center;
+    font-size: 2em;
+    font-weight:800;
+    color: #f9fbfd;
+    transition: all 500ms 100ms ease;
+    border-radius: 50%;
+}
+.strip{
+    transition:  transform 500ms ease-in-out;
+    border-radius: 1.3333333333333333vmin;
+    background-color: #dfe6f6;
+    box-shadow: -1vmin -1vmin 2vmin -0.5vmin #f9fbfd, 1vmin 1vmin 2vmin #a9bee8 ;
+}
+.number.pop{
+    color: #3e6ccb;
+    font-weight: bold;
+    transform: scale(1.3);
+    background-color: #dfeff6;
+    box-shadow: -1vmin -1vmin 2vmin -0.5vmin #f9fbfd, 1vmin 1vmin 2vmin #a9bee8;
+}
